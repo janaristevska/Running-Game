@@ -1,0 +1,55 @@
+[gd_scene load_steps=2 format=3 uid="uid://b8jj5oko3v8yv"]
+
+[ext_resource type="Script" path="res://game_over_screen.gd" id="1_ehva6"]
+
+[node name="GameOverScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ehva6")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 1148.0
+offset_bottom = 649.0
+color = Color(0.861102, 0.897706, 0.922324, 1)
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 387.0
+offset_top = 211.0
+offset_right = 797.0
+offset_bottom = 362.0
+theme_override_colors/font_color = Color(0.811765, 0, 0.0156863, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 80
+text = "YOU LOST!
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="."]
+modulate = Color(0.998373, 0.987602, 0.985953, 1)
+layout_mode = 0
+offset_left = 881.0
+offset_top = 496.0
+offset_right = 1126.0
+offset_bottom = 549.0
+theme_override_font_sizes/font_size = 24
+text = "Play Again"
+
+[node name="Label5" type="Label" parent="."]
+layout_mode = 0
+offset_left = 492.0
+offset_top = 333.0
+offset_right = 789.0
+offset_bottom = 361.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "You run out of time!"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

@@ -1,0 +1,55 @@
+[gd_scene load_steps=3 format=3 uid="uid://bkseel5lmkfmo"]
+
+[ext_resource type="Script" path="res://canvas.gd" id="1_72stp"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_efndm"]
+bg_color = Color(0.0784314, 0.956863, 0.886275, 0.317647)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[node name="Canvas" type="CanvasLayer"]
+script = ExtResource("1_72stp")
+
+[node name="Panel" type="Panel" parent="."]
+offset_left = 945.0
+offset_top = 560.0
+offset_right = 1222.0
+offset_bottom = 628.0
+scale = Vector2(0.685203, 1)
+theme_override_styles/panel = SubResource("StyleBoxFlat_efndm")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 1041.0
+offset_top = 570.0
+offset_right = 1099.0
+offset_bottom = 612.0
+scale = Vector2(0.77156, 1.08177)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 1080.0
+offset_top = 571.0
+offset_right = 1138.0
+offset_bottom = 613.0
+scale = Vector2(0.77156, 1.08177)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "/ 5"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label3" type="Label" parent="."]
+offset_left = 961.0
+offset_top = 577.0
+offset_right = 1040.0
+offset_bottom = 614.0
+theme_override_font_sizes/font_size = 27
+text = "Coins:"
+horizontal_alignment = 1
+vertical_alignment = 1
